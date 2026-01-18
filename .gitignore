@@ -1,0 +1,66 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments (if created)
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Matplotlib configuration
+.config/
+
+# Cache and temporary files
+*.log
+*.tmp
+.cache/
+
+# Environment variables
+.env
+.env.local
+
+# UV lock file (optional - depends on team preference)
+# uv.lock
+
+# Attached assets and temporary files
+attached_assets/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Frontend build artifacts
+frontend/dist/
+frontend/build/
+*.local
