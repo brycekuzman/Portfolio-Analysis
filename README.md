@@ -1,9 +1,10 @@
 # Portfolio Analysis Web Application
 
-A modern, professional financial portfolio analyzer built with **React**, **FastAPI**, and **yfinance**. This application helps investors compare their current holdings against optimized model portfolios, analyzing historical performance, projecting future returns, and quantifying fee impacts.
+This application continues my work on the ![Portfolio Analysis Streamlit application](https://github.com/brycekuzman/Portfolio-Analysis-Streamlit) with additional UI flexability and more features. Instead of using streamlit, this is built with **React**, **FastAPI**, and **yfinance**. This application helps investors compare their current holdings against optimized model portfolios, analyzing historical performance, projecting future returns, and quantifying fee impacts.
 
 ## 🚀 Live Preview
 ![App UI](attached_assets/screenshots/projections.png)
+![App UI](attached_assets/screenshots/projections2.png)
 
 ## 🕹️ Control Center (Left Panel)
 The left panel serves as the main navigation and control hub for the application. It includes:
@@ -24,7 +25,7 @@ Easily manage multiple accounts and set account-specific parameters to ensure ac
 ## 🔗 E*TRADE Integration
 Import your real-world data directly from your brokerage account for instant analysis.
 
-![E*TRADE Integration](attached_assets/screenshots/etrade_integration.png)
+![E*TRADE Integration](attached_assets/screenshots/etrade_import.png)
 
 - **Secure OAuth Connection**: Connect your E*TRADE account safely.
 - **Automatic Sync**: Pull holdings, quantities, and current values automatically.
@@ -33,18 +34,18 @@ Import your real-world data directly from your brokerage account for instant ana
 ## 📈 10-Year Projections
 Visualize the long-term growth potential of your strategy compared to optimized models.
 
-![Projections Chart](attached_assets/screenshots/projections_chart.png)
+![Projections Chart](attached_assets/screenshots/projection.png)
 
 *The interactive chart shows the growth trajectory of your current holdings vs. a recommended model portfolio.*
 
-![Projections Table](attached_assets/screenshots/projections_table.png)
+![Projections Table](attached_assets/screenshots/projection2.png)
 
 *Detailed year-by-year breakdown showing the exact impact of growth, taxes, fees, and cash flows on your balance.*
 
 ## 💰 Fee Impact Analysis
 Understand the hidden costs of your investments and find ways to save.
 
-![Fee Analysis](attached_assets/screenshots/fee_analysis.png)
+![Fee Analysis](attached_assets/screenshots/fees.png)
 
 - **Expense Ratios & Advisory Fees**: See a full breakdown of what you're paying.
 - **Savings Potential**: Quantify how much more wealth you could accumulate by reducing fees over 10 years.
@@ -53,7 +54,7 @@ Understand the hidden costs of your investments and find ways to save.
 ## ⏳ Historical Performance
 Look back at how your current portfolio would have performed during past market conditions (2015-2025).
 
-![Historical Performance](attached_assets/screenshots/historical_performance.png)
+![Historical Performance](attached_assets/screenshots/historical.png)
 
 - **Risk-Adjusted Metrics**: View your Sharpe Ratio, Volatility, and Max Drawdown.
 - **Total vs. Annualized Return**: Compare your strategy's efficiency against standard benchmarks.
