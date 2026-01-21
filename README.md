@@ -2,53 +2,65 @@
 
 A modern, professional financial portfolio analyzer built with **React**, **FastAPI**, and **yfinance**. This application helps investors compare their current holdings against optimized model portfolios, analyzing historical performance, projecting future returns, and quantifying fee impacts.
 
-## 🚀 Live Preview
-![App UI](attached_assets/screenshots/dashboard_main.png)
+## 🕹️ Control Center (Left Panel)
+The left panel serves as the main navigation and control hub for the application. It includes:
+- **Portfolio Selector**: A dropdown to switch between your different accounts (Brokerage, Roth IRA, Traditional IRA) or view the **Aggregate Portfolio** (a combined view of all accounts).
+- **Branding & Status**: Shows the total value of the selected portfolio and the overall target risk profile.
+- **Global Settings**: Manage the global tax rate applied to all taxable accounts.
+- **Holdings Input**: Add new investments by ticker symbol and assign dollar values.
 
-## ✨ Core Features
+## 📂 Portfolio Management
+Easily manage multiple accounts and set account-specific parameters to ensure accurate tax and cash flow projections.
 
-### 📊 Comprehensive Analysis
-- **Aggregate Portfolio View**: Combine multiple accounts (Brokerage, Roth, Traditional IRA) into a single unified analysis.
-- **Tax-Aware Projections**: Accurate 10-year growth scenarios that account for specific tax treatments:
-  - **Brokerage**: Taxes applied to yearly gains.
-  - **Roth IRA**: Tax-free accumulation and withdrawal.
-  - **Traditional IRA**: Tax-deferred tracking with estimated liability.
-- **Monte Carlo Simulations**: Future returns projected using asset-class specific growth rates and volatility.
+![Manage Portfolios](attached_assets/screenshots/manage_portfolios.png)
 
-### 💰 Fee Impact Tracking
-- **Fee Comparison**: Side-by-side analysis of advisory fees and expense ratios.
-- **Savings Calculator**: Calculate potential 10-year cumulative savings by switching to optimized low-cost models.
-- **Daily Compounding**: Fees are deducted daily to match real-world investment behavior.
+- **Multiple Account Types**: Support for Brokerage (taxable), Roth IRA (tax-free), and Traditional IRA (tax-deferred).
+- **Annual Cash Flows**: Set recurring contributions or withdrawals for each specific account.
+- **Persistence**: Your portfolio configurations stay active during your session.
 
-### 📈 Historical & Allocation
-- **Historical Backtesting**: Real market data from 2015-2025 showing returns, volatility, Sharpe ratio, and Max Drawdown.
-- **Asset Allocation**: Interactive pie charts for current vs. recommended allocations.
-- **Model Matching**: Automatically matches your risk profile to one of 5 optimized models (Conservative to Aggressive).
+## 🔗 E*TRADE Integration
+Import your real-world data directly from your brokerage account for instant analysis.
 
-## 🛠 Tech Stack
-- **Frontend**: React 18, TypeScript, Material UI (MUI), Plotly.js
-- **Backend**: FastAPI (Python 3.11), Uvicorn
-- **Analytics**: Pandas, NumPy, yfinance (Yahoo Finance API)
+![E*TRADE Integration](attached_assets/screenshots/etrade_integration.png)
 
-## 📸 Interface
+- **Secure OAuth Connection**: Connect your E*TRADE account safely.
+- **Automatic Sync**: Pull holdings, quantities, and current values automatically.
+- **Unified Analysis**: Combine imported E*TRADE accounts with manual portfolios for a complete financial picture.
 
-### Main Dashboard & Analysis
-![Projections](attached_assets/screenshots/projections.png)
-*Compare growth trajectories across different portfolio strategies.*
+## 📈 10-Year Projections
+Visualize the long-term growth potential of your strategy compared to optimized models.
 
-### Fee Breakdown
-![Fees](attached_assets/screenshots/fees.png)
-*Visualize the long-term impact of advisory fees and expense ratios.*
+![Projections Chart](attached_assets/screenshots/projections_chart.png)
 
-### Historical Performance
-![Historical](attached_assets/screenshots/historical.png)
-*Detailed risk-adjusted metrics using actual historical market data.*
+*The interactive chart shows the growth trajectory of your current holdings vs. a recommended model portfolio.*
 
-## ⚙️ How to Use
-1. **Add Portfolios**: Create multiple accounts (Brokerage, IRA) in the management modal.
-2. **Input Holdings**: Enter tickers (e.g., VOO, BND) and dollar amounts.
-3. **Set Tax Rates**: Adjust your global tax rate and per-portfolio cash flows.
-4. **Analyze**: Get instant recommendations and professional-grade financial charts.
+![Projections Table](attached_assets/screenshots/projections_table.png)
+
+*Detailed year-by-year breakdown showing the exact impact of growth, taxes, fees, and cash flows on your balance.*
+
+## 💰 Fee Impact Analysis
+Understand the hidden costs of your investments and find ways to save.
+
+![Fee Analysis](attached_assets/screenshots/fee_analysis.png)
+
+- **Expense Ratios & Advisory Fees**: See a full breakdown of what you're paying.
+- **Savings Potential**: Quantify how much more wealth you could accumulate by reducing fees over 10 years.
+- **Manager Fees**: Analysis of the weighted average expense ratio of your underlying fund selections.
+
+## ⏳ Historical Performance
+Look back at how your current portfolio would have performed during past market conditions (2015-2025).
+
+![Historical Performance](attached_assets/screenshots/historical_performance.png)
+
+- **Risk-Adjusted Metrics**: View your Sharpe Ratio, Volatility, and Max Drawdown.
+- **Total vs. Annualized Return**: Compare your strategy's efficiency against standard benchmarks.
+
+## 🍰 Asset Allocation
+Compare your current diversification against professional standards.
+
+- **Current vs. Model**: Side-by-side pie charts showing where your money is invested across US Equities, International Equities, Fixed Income, and Alternatives.
+- **Holdings Yields**: See the weighted average dividend yield of your portfolio.
+- **Asset Class Overrides**: Manually re-classify tickers if the automatic detection doesn't match your specific needs.
 
 ---
 *Disclaimer: For informational purposes only. Past performance does not guarantee future results.*
