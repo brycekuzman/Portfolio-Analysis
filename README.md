@@ -2,6 +2,9 @@
 
 A modern, professional financial portfolio analyzer built with **React**, **FastAPI**, and **yfinance**. This application helps investors compare their current holdings against optimized model portfolios, analyzing historical performance, projecting future returns, and quantifying fee impacts.
 
+## 🚀 Live Preview
+![App UI](attached_assets/screenshots/projections.png)
+
 ## 🕹️ Control Center (Left Panel)
 The left panel serves as the main navigation and control hub for the application. It includes:
 - **Portfolio Selector**: A dropdown to switch between your different accounts (Brokerage, Roth IRA, Traditional IRA) or view the **Aggregate Portfolio** (a combined view of all accounts).
