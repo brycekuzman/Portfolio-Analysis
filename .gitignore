@@ -41,8 +41,11 @@ Thumbs.db
 # uv.lock
 
 # Attached assets and temporary files
-!attached_assets/
+attached_assets/
 !attached_assets/screenshots/
+
+# Vite internal files
+frontend/.vite/
 
 # OS files
 .DS_Store
