@@ -44,6 +44,13 @@ Thumbs.db
 attached_assets/
 !attached_assets/screenshots/
 
+# Replit configuration
+.replit
+replit.md
+
+# Python dependency lock
+uv.lock
+
 # Vite internal files
 frontend/.vite/
 
